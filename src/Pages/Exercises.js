@@ -25,7 +25,7 @@ class Exercises extends react.Component {
                 let data = await res.json()
     
                 this.setState({
-                    data,loading : false
+                    data,loading : false 
                 }) 
             } catch (error) {
                 this.setState({
@@ -44,7 +44,7 @@ class Exercises extends react.Component {
         return (
             <div>
                 <Welcome
-                    username="Michelle" />
+                    username="Michelle Mellet" />
                 <ExerciseList
                     Exercises={this.state.data}
                 />
